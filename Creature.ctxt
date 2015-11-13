@@ -1,6 +1,23 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Creature()
-comment1.params=
-comment1.target=int\ damage()
-numComments=2
+comment0.text=\n\ Constructor\ default\ hit\ points\ and\ strength\ to\ 10\n
+comment1.params=hp\ strength
+comment1.target=Creature(int,\ int)
+comment1.text=\n\ Constructor\ to\ assign\ hit\ points\ and\ strength\n\n\ @param\ hp\ hit\ points\n\ @param\ strength\ strength\n
+comment2.params=
+comment2.target=int\ damage()
+comment2.text=\n\ Returns\ a\ random\ int\ for\ damage\ that\ can\ be\ a\ random\ number\ from\ 1\ to\n\ strength\n\n\ @return\ damage\n
+comment3.params=
+comment3.target=int\ getHp()
+comment3.text=\n\ Hp\ Getter\n\n\ @return\ hit\ points\n
+comment4.params=hp
+comment4.target=void\ setHp(int)
+comment4.text=\n\ Hp\ Setter\n\n\ @param\ hp\ -\ can\ not\ be\ less\ than\ the\ MINIMUM\n
+comment5.params=
+comment5.target=int\ getStrength()
+comment5.text=\n\ Strength\ Getter\n\n\ @return\ strength\n
+comment6.params=strength
+comment6.target=void\ setStrength(int)
+comment6.text=\n\ Strength\ Setter\n\n\ @param\ strength\ -\ can\ not\ be\ less\ than\ the\ MINIMUM\n
+numComments=7

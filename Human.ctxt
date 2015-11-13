@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Human()
+comment0.text=\n\ Default\ Constructor\n
+comment1.params=hp
+comment1.target=void\ setHp(int)
+comment1.text=\n\ Hp\ Setter\n\n\ @param\ hp\ -\ can\ not\ be\ less\ than\ the\ MINIMUM\n
+comment2.params=strength
+comment2.target=void\ setStrength(int)
+comment2.text=\n\ Strength\ Setter\n\n\ @param\ strength\ -\ can\ not\ be\ less\ than\ the\ MINIMUM\n
+numComments=3

@@ -16,7 +16,7 @@ public class Elf extends Creature {
 	 * Default Constructor
 	 */
 	public Elf() {
-		super();
+		super(5,5);
 	}
 
 	/**

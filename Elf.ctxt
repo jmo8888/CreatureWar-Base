@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Elf()
+comment0.text=\n\ Default\ Constructor\n
+comment1.params=
+comment1.target=int\ damage()
+comment1.text=\n\ Ten\ percent\ change\ to\ do\ magical\ damage\ which\ is\ 2x\ damage\n\n\ @return\ damage\n
+numComments=2
