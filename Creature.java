@@ -61,7 +61,7 @@ public class Creature {
 		if (hp > MINIMUM) {
 			this.hp = hp;
 		} else {
-			System.out.println("Hit points must be set to 5 or greater");
+			this.hp = MINIMUM;
 		}
 	}
 
@@ -83,7 +83,12 @@ public class Creature {
 		if (strength > MINIMUM) {
 			this.strength = strength;
 		} else {
-			System.out.println("Strength must be set to 5 or greater");
+			this.strength = MINIMUM;
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Creature - Hit Points = " + getHp() + " Strength " + getStrength();
 	}
 }

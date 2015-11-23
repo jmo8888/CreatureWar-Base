@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * This is the class for humans - this class extends Creature Class Humans have
  * a max strength of 18 Humans have a max hit point of 30
@@ -7,14 +9,24 @@
  */
 public class Human extends Creature {
 
-	private static final int MAXIMUM_HIT_POINTS = 30;
-	private static final int MAXIMUM_STRENGTH = 18;
+	public static final int MAXIMUM_HIT_POINTS = 30;
+	public static final int MAXIMUM_STRENGTH = 18;
 
 	/**
 	 * Default Constructor
 	 */
 	public Human() {
 		super();
+	}
+
+	/**
+	 * Constructor to assign hit points and strength
+	 *
+	 * @param hp hit points
+	 * @param strength strength
+	 */
+	public Human(int hp, int strength) {
+		super(hp, strength);
 	}
 
 	/**
@@ -27,7 +39,7 @@ public class Human extends Creature {
 		if (hp < MAXIMUM_HIT_POINTS) {
 			super.setHp(hp);
 		} else {
-			System.out.println("Hit points cannot be greater than " + MAXIMUM_HIT_POINTS);
+			super.setHp(MAXIMUM_HIT_POINTS);
 		}
 	}
 
@@ -41,8 +53,13 @@ public class Human extends Creature {
 		if (strength < MAXIMUM_STRENGTH) {
 			super.setStrength(strength);
 		} else {
-			System.out.println("Strength cannot be greater than " + MAXIMUM_STRENGTH);
+			super.setHp(MAXIMUM_STRENGTH);
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Human - Hit Points = " + getHp() + " Strength " + getStrength();
 	}
 
 }
